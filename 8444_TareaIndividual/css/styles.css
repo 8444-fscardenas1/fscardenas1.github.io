@@ -10,6 +10,45 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ CATALOG {
+  background-color: #ffffff;
+  width: 100%;
+}
+CD {
+  display: block;
+  margin-bottom: 30pt;
+  margin-left: 0;
+}
+TITLE {
+  display: block;
+  color: #138bd1;
+  font-size: 20pt;
+}
+ARTIST {
+  display: block;
+  color: #0fa50f;
+  font-size: 20pt;
+}
+COUNTRY, PRICE, YEAR, COMPANY {
+  display: block;
+  color: #da5518;
+  margin-left: 20pt;
+}
+
+ .CodeMirror {
+  float: left;
+  width: 50%;
+  border: 1px solid black;
+}
+iframe {
+  width: 60%;
+  float: left;
+  height: 500px;
+  border: 1px solid black;
+  border-left: 0px;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11411,7 +11450,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/fondo_3.png");
+  background-image: url("../assets/img/fondo.webp");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

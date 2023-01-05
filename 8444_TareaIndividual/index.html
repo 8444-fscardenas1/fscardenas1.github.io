@@ -5,7 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Web School</title>
+        <title>Trabajo Individual</title>
+        <!-- CodeMirror-->
+        <link rel=stylesheet href=codemirror/lib/codemirror.css>
+        <link rel=stylesheet href=codemirror/theme/oceanic-next.css>
+        <script src=codemirror/lib/codemirror.js></script>
+        <script src=codemirror/mode/xml/xml.js></script>
+        <script src=codemirror/mode/javascript/javascript.js></script>
+        <script src=codemirror/mode/css/css.js></script>
+        <script src=codemirror/mode/htmlmixed/htmlmixed.js></script>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -32,12 +40,11 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Temas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#metodos">Metodos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#componentes">Componentes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#elementos">Elementos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#html">HTML</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#css">CSS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#forms">Formularios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#metodos">XML</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#componentes">JSON</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#html">XML vs JSON - Semejanzas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#css">XML vs JSON - Diferencias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#elementos">AJAX</a></li>
                         <li class="nav-item"><a class="nav-link" href="../Landing Page/index.html">Sing Out</a></li>
                     </ul>
                 </div>
@@ -49,7 +56,7 @@
                 <div class="container">
                     <div class="masthead-subheading">Trabajo Individual by</div>
                     <div class="masthead-heading text-uppercase">Sebastian Cardenas</div>
-                    <a class="btn btn-primary btn-xl text-uppercase" href="#intro">Comencemos</a>
+                    <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Comencemos</a>
                 </div>
             </header>
         </div>
@@ -59,7 +66,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Temas</h2>
-                    <h3 class="section-subheading text-muted">Haga click en cada uno para visualizar un ejemplo.</h3>
+                    <h3 class="section-subheading text-muted">Haga click en cada recuadro para visualizar un ejemplo.</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -69,10 +76,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <center><img class="img-fluid" src="assets/img/portfolio/metodos.jpg" alt="..." width="55%" /></center>
+                                <center><img class="img-fluid" src="assets/img/portfolio/xml.png" alt="..." width="55%" /></center>
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Métodos</div>
+                                <div class="portfolio-caption-heading">XML</div>
                             </div>
                         </div>
                     </div>
@@ -83,10 +90,10 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <center><img class="img-fluid" src="assets/img/portfolio/Componentes.PNG" alt="..." width="55%"/></center>
+                                <center><img class="img-fluid" src="assets/img/portfolio/json.png" alt="..." width="55%"/></center>
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Componentes</div>
+                                <div class="portfolio-caption-heading">JSON</div>
                             </div>
                         </div>
                     </div>
@@ -97,55 +104,14 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <center><img class="img-fluid" src="assets/img/portfolio/elementos.gif" alt="..." width="60%" /></center>
+                                <center><img class="img-fluid" src="assets/img/portfolio/ajax.png" alt="..." width="36.5%" /></center>
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Elementos</div>
+                                <div class="portfolio-caption-heading">AJAX</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <center><img class="img-fluid" src="assets/img/portfolio/html_dom.png" alt="..." width="60%" /></center>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">HTML</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <center><img class="img-fluid" src="assets/img/portfolio/css-1.png" alt="..." width="50%" /></center>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">CSS</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <center><img class="img-fluid" src="assets/img/portfolio/formulario.jpg" alt="..." width="60%" /></center>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Formularios</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -154,8 +120,8 @@
             <section class="page-section fond1" id="metodos">
                 <div class="container">
                     <div class="text-center">
-                        <h2 class="section-heading text-uppercase">Métodos</h2>
-                        <h3 class="section-subheading text-muted">JavaScript - Métodos HTML DOM</h3>
+                        <h2 class="section-heading text-uppercase">XML</h2>
+                        <h3 class="section-subheading text-muted">Introduccion</h3>
                     </div>
                     <div class="row text-center">
                         <div class="col-md-4">
@@ -164,8 +130,9 @@
                                 <i class="fas fa-question fa-stack-1x fa-inverse"></i>
                             </span>
                             <h4 class="my-3">¿Qué es?</h4>
-                            <p class="text-muted">Los métodos HTML DOM son acciones que puede realizar (en elementos HTML). <br>
-                                Las propiedades HTML DOM son valores (de elementos HTML) que puede establecer o cambiar.</p>
+                            <p class="text-muted">XML significa lenguaje de marcado extensible.<br>
+                                Fue diseñado para almacenar y transportar datos y ser legible tanto por humanos como por máquinas.<br>
+                                Es una herramienta independiente de software y hardware para almacenar y transportar datos.</p>
                         </div>
                         <div class="col-md-4">
                             <span class="fa-stack fa-4x">
@@ -173,7 +140,9 @@
                                 <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
                             </span>
                             <h4 class="my-3">Como funciona</h4>
-                            <p class="text-muted">Se accede a un elemento HTML comunmente mediante el id, y podemos manipular su informacion o su accion mediante un script</p>
+                            <p class="text-muted">XML almacena datos en formato de texto sin formato. Esto proporciona una forma independiente de software y hardware de almacenar, transportar y compartir datos.<br>
+                                También facilita la expansión o actualización a nuevos sistemas operativos, nuevas aplicaciones o nuevos navegadores, sin perder datos.<br>
+                                Con XML, los datos pueden estar disponibles para todo tipo de "máquinas de lectura" como personas, computadoras, máquinas de voz, fuentes de noticias, etc.</p>
                         </div>
                         <div class="col-md-4">
                             <span class="fa-stack fa-4x">
@@ -181,20 +150,23 @@
                                 <i class="fas fa-check fa-stack-1x fa-inverse"></i>
                             </span>
                             <h4 class="my-3">Uso</h4>
-                            <p class="text-muted">DOM permite acceder y manipular fácilmente etiquetas, ID, clases, atributos o elementos de HTML utilizando comandos o métodos proporcionados por el objeto del documento.</p>
+                            <p class="text-muted">XML se usa a menudo para separar los datos de la presentación.
+                                no contiene ninguna información sobre cómo se mostrará.
+                                Los mismos datos XML se pueden utilizar en muchos escenarios de presentación diferentes.
+                                Debido a esto, con XML, existe una separación total entre datos y presentación.
+                            </p>
                         </div>
-                        <center><a href="../Html/MetDomBasic.html"  class="a_btn">APRENDER MAS</a></center>
                     </div>
                 </div>
             </section>
         </div>
         <div data-aos="fade-down-left">
             <!-- COMPONENTES-->
-         <section class="page-section fond2" id="componentes">
+         <section class="page-section fond6" id="componentes">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Componentes</h2>
-                    <h3 class="section-subheading text-muted">JavaScript - Métodos HTML DOM</h3>
+                    <h2 class="section-heading text-uppercase">JSON</h2>
+                    <h3 class="section-subheading text-muted">Introduccion</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
@@ -202,110 +174,71 @@
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-question fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">¿Cuales son?</h4>
-                        <p class="text-muted">Los objetos del DOM modelizan tanto la ventana del navegador como el historial, el documento o página web, y todos los elementos que pueda tener dentro la propia página, como párrafos, divisiones, tablas, formularios y sus campos, etc.</p>
+                        <h4 class="my-3">¿Que significa?</h4>
+                        <p class="text-muted">JSON significa J ava S cript O bject N otation.
+                            Es un formato de texto para almacenar y transportar datos.                           
+                            Es "autodescriptivo" y fácil de entender</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-sitemap fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Estructura</h4>
-                        <p class="text-muted">La estructura del DOM está integrada por nodos, que se relacionan unos con otros en una estructura jerárquica, y cada nodo tiene un nodo superior del que depende, que es el nodo padre.</p>
+                        <h4 class="my-3">¿Por que usar JSON?</h4>
+                        <p class="text-muted">El formato JSON es sintácticamente similar al código para crear objetos JavaScript. Debido a esto, un programa JavaScript puede convertir fácilmente datos JSON en objetos JavaScript.
+                            Dado que el formato es solo texto, los datos JSON se pueden enviar fácilmente entre computadoras y ser utilizados por cualquier lenguaje de programación.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-check fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Uso</h4>
-                        <p class="text-muted">- Encontrar elementos HTML <br>-Cambio de elementos HTML <br>- Adición y eliminación de elementos <br>- Adición de controladores de eventos</p>
+                        <h4 class="my-3">Almacenamiento de datos</h4>
+                        <p class="text-muted">Al almacenar datos, estos deben tener un formato determinado e, independientemente de dónde elija almacenarlos, el texto siempre es uno de los formatos legales.
+                            JSON hace posible almacenar objetos de JavaScript como texto.</p>
                     </div>
-                    <center><a href="../Html/CompDomBasic.html"  class="a_btn">APRENDER MAS</a></center>
                 </div>
             </div>
         </section>
         </div>
 
         <div data-aos="fade-down-right">
-            <!-- ELEMENTOS-->
-         <section class="page-section fond3" id="elementos">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Elementos</h2>
-                    <h3 class="section-subheading text-muted">Elementos HTML DOM de JavaScript</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-question fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">¿Que son?</h4>
-                        <p class="text-muted">Son todas las partes, secciones, estructuras accesibles y modificables en nuestra pagina HTML</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-list fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Tipos de acceso</h4>
-                        <p class="text-muted">HTML por ID <br>
-                            HTML por nombre de etiqueta <br>
-                            HTML por nombre de clase <br>
-                            HTML mediante selectores CSS <br>
-                            HTML por colecciones de objetos HTML</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-check fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Uso</h4>
-                        <p class="text-muted">- Busqueda y modificacion  <br>-Busqueda y eliminacion  <br>- Busqueda y redireccion <br>- Busqueda mediante selectores</p>
-                    </div>
-                    <center><a href="../Html/ElemDomBasic.html"  class="a_btn">APRENDER MAS</a></center>
-                </div>
-            </div>
-        </section>
-        </div>
-
-        <div data-aos="flip-left">
             <!-- HTML-->
         <section class="page-section fond4" id="html">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">HTML</h2>
-                    <h3 class="section-subheading text-muted">JavaScript HTML DOM - Cambio de HTML</h3>
+                    <h2 class="section-heading text-uppercase">XML vs JSON</h2>
+                    <h3 class="section-subheading text-muted">Cuadro Comparativo - Semejanzas</h3>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-brands fa-html5 fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">HTML DOM</h4>
-                        <p class="text-muted">El HTML DOM permite que JavaScript cambie el contenido de los elementos HTML. <br> La forma más sencilla de modificar el contenido de un elemento HTML es mediante la innerHTML propiedad.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-code fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Funciones</h4>
-                        <p class="text-muted">Cambios de contenido <br>
-                            Cambio de valor de un atributo <br>
-                            Contenido HTML dinamico <br></p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-file-code fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Uso</h4>
-                        <p class="text-muted">- Busqueda y modificacion  <br>-Busqueda y eliminacion  <br>- Busqueda y redireccion <br>- Busqueda mediante selectores</p>
-                    </div>
-                    <center><a href="../Html/HtmlDomBasic.html"  class="a_btn">APRENDER MAS</a></center>
+                        <div class="table-responsive">
+                            <table class="table table-condensed">
+                            <thead>
+                                <tr class="active">
+                                    <th>XML</th>
+                                    <th>JSON</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Son formatos populares para el intercambio de datos.</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>Tanto JSON como XML son formatos autodescriptivos. Los formatos autodescriptivos se diseñaron para que fueran legibles para el ser humano y legibles para la máquina.</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>Tanto JSON como XML tienen un buen soporte para las definiciones de contenido y la validación.</td>
+                                </tr>
+                                <tr class="danger">
+                                    <td>JSON y XML pueden utilizarse para la serialización de datos (convertir una estructura de datos a un formato para su almacenamiento o transmisión).</td>
+                                </tr>
+                                <tr class="info">
+                                    <td>Una de las similitudes más evidentes entre estas dos estructuras de datos es que JSON y XML están basadas en texto. Por ello, muchos creen que JSON se creó para ser una alternativa más sencilla a XML.</td>
+                                </tr>
+                                <tr>
+                                    <td>Ambos formatos tienen estructuras jerárquicas en las que cada campo tiene su nombre y valor separados por comas.</td>
+                                </tr>
+                            </tbody>
+                        </table>      
                 </div>
             </div>
         </section>
@@ -316,83 +249,102 @@
         <section class="page-section fond5" id="css">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">CSS</h2>
-                    <h3 class="section-subheading text-muted">JavaScript HTML DOM - Cambio de CSS</h3>
+                    <h2 class="section-heading text-uppercase">XML vs JSON</h2>
+                    <h3 class="section-subheading text-muted">Cuadro Comparativo - Diferencias</h3>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-brands fa-css3 fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">CSS DOM</h4>
-                        <p class="text-muted">El HTML DOM permite que JavaScript cambie el estilo de los elementos HTML.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-brands fa-codepen fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Uso de eventos</h4>
-                        <p class="text-muted">Los eventos son generados por el navegador cuando "le suceden cosas" a los elementos HTML: <br>
-                            - Se hace clic en un elemento <br>
-                            - La página ha cargado <br>
-                            - Los campos de entrada se cambian <br></p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-file-code fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Uso</h4>
-                        <p class="text-muted">- Cambios de color  <br>- Cambio de animaciones al hacer click  <br>- Cambios de fondos y formas <br>- Cambios de estilo totales</p>
-                    </div>
-                    <center><a href="../Html/CssDomBasic.html"  class="a_btn">APRENDER MAS</a></center>
+                        <div class="table-responsive">
+                            <table class="table table-condensed">
+                            <thead>
+                                <tr class="active">
+                                    <th>XML</th>
+                                    <th>JSON</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>XML es una forma más larga de representar datos estructurados.</td>
+                                    <td>JSON es una forma ligera y legible para el ser humano de representar estructuras de datos.</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>XML sólo puede almacenarse como archivo de texto.</td>
+                                    <td>JSON puede utilizarse con archivos JavaScript o de texto plano.</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>XML es una forma específica de lenguaje de marcas para almacenar datos de forma organizada.</td>
+                                    <td>JSON es una forma de almacenar datos de forma compacta para que los programas puedan leerlos.</td>
+                                </tr>
+                                <tr class="danger">
+                                    <td>XML sigue siendo la opción preferida para transmitir datos estructurados a través de la web.</td>
+                                    <td>JSON ha ido ganando popularidad como medio de almacenamiento para aplicaciones web debido a su simplicidad.</td>
+                                </tr>
+                                <tr class="info">
+                                    <td>XML tiene algunos problemas de compatibilidad entre plataformas. No es compatible con muchos lenguajes de programación (excepto Actionscript), por lo que los desarrolladores tienen que elegir entre utilizar una herramienta como Apache HttpComponents o Apache axis2 si quieren que sus aplicaciones funcionen en varias plataformas simultáneamente.</td>
+                                    <td>JSON en tu aplicación web o móvil sin preocuparte de los problemas de compatibilidad porque está ampliamente aceptado en la web y en las aplicaciones móviles.</td>
+                                </tr>
+                
+                                <tr>
+                                    <td>XML tiene una estructura más rígida que JSON, lo que hace más difícil su manipulación sin romper el documento.</td>
+                                    <td>JSON se puede editar el valor directamente en el editor de texto, y listo. Esto significa que un usuario malintencionado podría cambiar el valor de un elemento simplemente editando el propio documento y haciendo que se refleje en la salida de su programa.</td>
+                                </tr>
+                            </tbody>
+                        </table> 
                 </div>
             </div>
         </section>
         </div>
 
         <div data-aos="flip-up">
-            <!-- FORMULARIOS-->
-        <section class="page-section fond6" id="forms">
+            <!-- ELEMENTOS-->
+         <section class="page-section fond3" id="elementos">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Formularios</h2>
-                    <h3 class="section-subheading text-muted">Formularios JavaScript</h3>
+                    <h2 class="section-heading text-uppercase">AJAX</h2>
+                    <h3 class="section-subheading text-muted">Introduccion</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-brands fa-wpforms fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-question fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Formularios con JS</h4>
-                        <p class="text-muted">Los formularios son herramientas importantes para la recoleccion de datos, y gracias a JavaScript podemos realizar diversas validaciones y controles a dichos datos.</p>
+                        <h4 class="my-3">¿Que es?</h4>
+                        <p class="text-muted">AJAX = J avaScript asincrónico y X ML .
+                            AJAX no es un lenguaje de programación.                            
+                            AJAX solo usa una combinación de:<br>                           
+                            Un objeto integrado en el navegador XMLHttpRequest(para solicitar datos de un servidor web)
+                            JavaScript y HTML DOM (para mostrar o usar los datos)</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-solid fa-check-to-slot fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-list fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Funciones</h4>
-                        <p class="text-muted">
-                            - Validacion numerica <br>
-                            - Validacion de datos <br>
-                            - Validacion de restricciones HTML <br>
-                            - Validacion de restricciones HTML <br>
-                        </p>
+                        <h4 class="my-3">¿Como Funciona?</h4>
+                        <p class="text-muted">1. Se produce un evento en una página web (se carga la página, se hace clic en un botón).<br>
+                            2. JavaScript crea un objeto XMLHttpRequest.<br>
+                            3. El objeto XMLHttpRequest envía una solicitud a un servidor web.<br>
+                            4. El servidor procesa la solicitud.<br>
+                            5. El servidor envía una respuesta a la página web.<br>
+                            6. La respuesta es leída por JavaScript.<br>
+                            7. JavaScript realiza la acción adecuada (como la actualización de la página)</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-solid fa-square-check fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-check fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Uso</h4>
-                        <p class="text-muted">Se regula la entrada de datos bajo el estandar deseado por el programador o usuario final</p>
+                        <h4 class="my-3">Ventajas</h4>
+                        <p class="text-muted">AJAX es el sueño de un desarrollador, porque puede:<br>
+                            Leer datos de un servidor web, después de que se haya cargado la página.<br>
+                            Actualizar una página web sin recargar la página.<br>
+                            Enviar datos a un servidor web - en segundo plano</p>
                     </div>
-                    <center><a href="../Html/FormDomBasic.html"  class="a_btn">APRENDER MAS</a></center>
                 </div>
+            </div>
+        </section>
+        </div>
+
+        <div data-aos="flip-left">
             </div>
         </section>
         </div>
@@ -402,17 +354,8 @@
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Equipo de Desarrollo</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/Dilan.jpeg" alt="..." />
-                            <h4>Dilan Zurita</h4>
-                            <p class="text-muted">Estudiante en Ing. TI</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/dilanzurita/" aria-label="Parveen Anand Facebook Profile"><i class="fa-sharp fa-brands fa-instagram"></i></a>
-                        </div>
-                    </div>
+                    <h2 class="section-heading text-uppercase">Desarrollador</h2>
+                </div><center><br><br>
                     <div class="col-lg-4">
                         <div>
                             <img src="assets/img/team/ESPE encabezado.png" alt="" width="400px">
@@ -425,7 +368,7 @@
                             <p class="text-muted">Estudiante en Ing. TI</p>
                             <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/sebasrosero_/" aria-label="Parveen Anand Facebook Profile"><i class="fa-sharp fa-brands fa-instagram"></i></a>
                     </div>
-                </div>
+                </div></center>
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Para más información visitar las paginas oficiales.</p></div>
                 </div>
@@ -482,15 +425,26 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Ejemplo de cambio de contenido</h2>
-                                    <p class="item-intro text-muted">Creado por ProWeb.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/Ejemplos/Metodos.PNG" alt="..." />
-                                    <p>Podemos observar que así la etiqueta p de nuestro cuerpo HTML tenga otro texto al que vemos en pantalla, estamos cambiando el texto mostrado mediante un script</p>
-                                    
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar ejemplo
-                                    </button>
+                                    <h2 class="text-uppercase">Ejemplo de visualizacion de archivos XML</h2>
+                                    <p class="item-intro text-muted">Creado por VisualEstudio</p>
+                                    <textarea id=code name=code>
+<!DOCTYPE html>
+<html>
+<body>
+<iframe src="note.xml"></iframe>
+</body>
+</html>
+                                                                           
+</textarea>
+<iframe id=preview></iframe>   
+<p>Los archivos XML sin procesar se pueden ver en todos los navegadores principales.
+    No espere que los archivos XML se muestren como páginas HTML. En el ejemplo mostrado en la pantalla ejecutable y grafica
+    lo que se ha realizado es guardar un archivo xml el cual lo hemos nombrado 'note' y se ejecuta con un 'iframe' y se visualiza 
+    en la pantalla a la izquierda.</p>     
+        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+            <i class="fas fa-xmark me-1"></i>
+            Cerrar ejemplo
+        </button>  
                                 </div>
                             </div>
                         </div>
@@ -508,15 +462,44 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Ejemplo de eliminacion de componente</h2>
-                                    <p class="item-intro text-muted">Creado por ProWeb.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/Ejemplos/Componente.PNG" alt="..." />
-                                    <p>Mediante la funcion eliminar elemento podemos programar un script capaz de eliminar una parte de nuestro HTML al dar click en un botón.</p>
-                                    
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar Ejemplo
-                                    </button>
+                                    <h2 class="text-uppercase">Ejemplo de hacer una tabla basada en datos JSON.</h2>
+                                    <p class="item-intro text-muted">Creado por VisualEstudio.</p>
+<textarea id=code2 name=code2>
+    <!DOCTYPE html>
+    <html>
+    <body>
+    
+    <h2>Tabla realizada con datos JSON</h2>
+    
+    <p id="demo"></p>
+    
+    <script>
+    const dbParam = JSON.stringify({table:"customers",limit:20});
+    const xmlhttp = new XMLHttpRequest();
+    xmlhttp.onload = function() {
+      const myObj = JSON.parse(this.responseText);
+      let text = "<table border='1'>"
+      for (let x in myObj) {
+        text += "<tr><td>" + myObj[x].name + "</td></tr>";
+      }
+      text += "</table>"    
+      document.getElementById("demo").innerHTML = text;
+    }
+    xmlhttp.open("POST", "json_demo_html_table.php");
+    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xmlhttp.send("x=" + dbParam);
+    </script>
+    
+    </body>
+    </html>
+                                                                           
+</textarea>
+<iframe id=preview2></iframe>   
+<p></p>     
+        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+            <i class="fas fa-xmark me-1"></i>
+            Cerrar ejemplo
+        </button>  
                                 </div>
                             </div>
                         </div>
@@ -534,11 +517,40 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Ejemplo de Busqueda de elemento mediante etiqueta y posicion</h2>
-                                    <p class="item-intro text-muted">Creado por ProWeb.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/Ejemplos/Elementos.PNG" alt="..." />
-                                    <p>Mediante un script especificamos la etiqueta que estamos buscando y le pasamos la posicion deseada al momento de imprimir para comprobar su efectividad.</p>
+                                    <h2 class="text-uppercase">Ejemplo AJAX muestra de tabla con boton</h2>
+                                    <p class="item-intro text-muted">Creado por VisualEstudio</p>
                                     
+                                    <textarea id=code3 name=code3>
+    <!DOCTYPE html>
+    <html>
+    <body>
+    
+    <h2>Tabla realizada con datos AJAX por boton</h2>
+    
+    <p id="demo"></p>
+    
+    <script>
+    const dbParam = JSON.stringify({table:"customers",limit:20});
+    const xmlhttp = new XMLHttpRequest();
+    xmlhttp.onload = function() {
+      const myObj = JSON.parse(this.responseText);
+      let text = "<table border='1'>"
+      for (let x in myObj) {
+        text += "<tr><td>" + myObj[x].name + "</td></tr>";
+      }
+      text += "</table>"    
+      document.getElementById("demo").innerHTML = text;
+    }
+    xmlhttp.open("POST", "json_demo_html_table.php");
+    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xmlhttp.send("x=" + dbParam);
+    </script>
+    
+    </body>
+    </html>
+                                                                           
+</textarea>
+<iframe id=preview3></iframe>  
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Cerrar Ejemplo
@@ -562,9 +574,55 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Cambio de tipo de imagen en HTML</h2>
                                     <p class="item-intro text-muted">Creado por ProWeb.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/Ejemplos/HTML.PNG" alt="..." />
-                                    <p>Mediante el script se ha logrado cambiar el tipo de archivo o extension de la imagen ya que antes era .gif y tenía movimiento ahora es estático gracias a que se ha cambiado su extension a .jpg</p>
-                                    
+                                    <textarea id=code3 name=code3>
+                                        <!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+<body>
+
+<button type="button" onclick="loadXMLDoc()">Ir a mi coleccion</button>
+<br><br>
+<table id="demo"></table>
+
+<script>
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "cd_catalog.xml", true);
+  xmlhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Artist</th><th>Title</th></tr>";
+  var x = xmlDoc.getElementsByTagName("CD");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+
+</body>
+</html>                                                                        
+                                    </textarea>
+                                    <iframe id=preview3></iframe>   
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Cerrar Ejemplo
@@ -644,6 +702,62 @@
             AOS.init({
                 duration: 2000
             });
+          </script>
+           <script>
+    var delay;
+
+    var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor.setSize("800", "200");
+
+    editor.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor, 'preview'), 100);
+    });
+
+    var editor2 = CodeMirror.fromTextArea(document.getElementById('code2'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor2.setSize("500", "400");
+
+    editor2.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor2, 'preview2'), 100);
+    });
+
+    var editor3 = CodeMirror.fromTextArea(document.getElementById('code3'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor3.setSize("500", "400");
+
+    editor3.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor3, 'preview3'), 100);
+    });
+    function updatePreview(editor, preview) {
+      var editor = editor;
+      var preview = preview;
+      var previewFrame = document.getElementById(preview);
+      var preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
+      preview.open();
+      preview.write(editor.getValue());
+      preview.close();
+    }
+
+    setTimeout(updatePreview(editor, 'preview'), 100);
+    setTimeout(updatePreview(editor2, 'preview2'), 100);
+    setTimeout(updatePreview(editor3, 'preview3'), 100);
+          </script>
           </script>
     </body>
 </html>
